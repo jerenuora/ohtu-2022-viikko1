@@ -15,7 +15,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_konstruktori_luo_ei_negatiivista_varaston(self):
         self.assertAlmostEqual(self.neg_tilavuus_varasto.tilavuus, 0)
-        # saldo näköjään menee silti miinukselle
+        # saldo näköjään menee silti miinukselle?
         self.assertAlmostEqual(self.neg_tilavuus_varasto.saldo, -1)
 
     def test_konstruktori_luo_täyden_varaston_ei_liikaa(self):
